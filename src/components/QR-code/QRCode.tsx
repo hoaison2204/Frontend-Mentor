@@ -1,15 +1,10 @@
 import React from 'react'
-import image from '../assets/qr-code.png'
+import image from '../../assets/qr-code.png'
 
-interface QRCodeComponentProps {
-	heading: string
-	description: string
-}
+const heading: string = 'Improve your front-end skills by building projects'
+const description: string = 'Scan the QR code to visit Frontend Mentor and take your coding skills to the next level'
 
-const QRCodeComponent: React.FC<QRCodeComponentProps> = ({
-	heading,
-	description,
-}) => {
+const QRCode: React.FC = () => {
 	return (
 		<div className='bg-lightGray flex justify-center py-[150px]'>
 			<div className='mx-4 max-w-80 p-4 bg-white rounded-[20px] drop-shadow-base'>
@@ -29,4 +24,4 @@ const QRCodeComponent: React.FC<QRCodeComponentProps> = ({
 	)
 }
 
-export default QRCodeComponent
+export default QRCode
