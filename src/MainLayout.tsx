@@ -4,9 +4,9 @@ import Router from './Router/Router'
 
 const MainLayout: React.FC = () => {
 	return (
-		<div style={{ display: 'flex' }}>
+		<div className='flex flex-col'>
 			<Router />
-			<div style={{ flex: 1, padding: '20px' }}>
+			<div className='content-container'>
 				<Outlet />
 			</div>
 		</div>

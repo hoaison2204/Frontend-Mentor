@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../../assets/qr-code.png'
+import image from '../../assets/images/QR-code/qr-code.png'
 
 const heading: string = 'Improve your front-end skills by building projects'
 const description: string = 'Scan the QR code to visit Frontend Mentor and take your coding skills to the next level'

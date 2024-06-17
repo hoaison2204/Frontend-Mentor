@@ -28,9 +28,12 @@ module.exports = {
 			//QR-code
 			heading: ['24px', '32px'],
 			paragraph: ['17px', '24px'],
+			'13': '13px',
+			'32': '32px'
 		},
 		fontFamily: {
 			outfit: ['Outfit', 'sans-serif'],
+			youngSerif: ['Young Serif', 'sans-serif']
 		},
 	},
 	plugins: [],
