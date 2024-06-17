@@ -1,22 +1,25 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+interface link {
+	content: string
+	path: string
+}
+
+const links: link[] = [
+	{ content: 'QR code page', path: 'QR-code' },
+	{ content: 'Recipe page', path: 'Recipe-page' },
+]
+
 const Router: React.FC = () => {
 	return (
-		<nav
-			style={{
-				width: '200px',
-				height: '100vh',
-				background: '#f0f0f0',
-				padding: '20px',
-			}}>
-			<ul style={{ listStyleType: 'none', padding: 0 }}>
-				<li>
-					<Link to='/QR-code'>QR code page</Link>
-				</li>
-				<li>
-					<Link to='/Recipe-page'>Recipe page</Link>
-				</li>
+		<nav>
+			<ul className='flex gap-x-2'>
+				{links.map((link) => (
+					<li className='bg-darkRaspberry rounded-lg p-0 px-4 text-white'>
+						<Link to={`/${link.path}`}>{link.content}</Link>
+					</li>
+				))}
 			</ul>
 		</nav>
 	)

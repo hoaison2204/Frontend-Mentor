@@ -11,3 +11,7 @@
 * {
   @apply p-0 m-0 font-outfit;
 }
+
+.content-container {
+  @apply w-full max-w-[1440px] m-0 mx-auto;
+}

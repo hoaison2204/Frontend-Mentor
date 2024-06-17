@@ -1,0 +1,7 @@
+.bullet-darkRaspberry-color>li::marker {
+    @apply text-darkRaspberry;
+}
+
+.bullet-nutmeg-color>li::marker {
+    @apply text-nutmeg;
+}
