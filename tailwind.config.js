@@ -3,6 +3,9 @@ module.exports = {
 	theme: {
 		prefix: 'tw-',
 		extend: {},
+		boxShadow: {
+			blackBoxShadow: '8px 8px 0 0 rgba(0, 0, 0, 1)'
+		},
 		screens: {
 			desktop: '1440px',
 			mobile: '375px',
@@ -23,13 +26,15 @@ module.exports = {
 			darkCharcoal: 'hsl(24, 5%, 18%)',
 			nutmeg: 'hsl(14, 45%, 36%)',
 			darkRaspberry: 'hsl(332, 51%, 32%)',
+			yellow: 'rgb(244, 208, 78)'
 		},
 		fontSize: {
 			//QR-code
 			heading: ['24px', '32px'],
 			paragraph: ['17px', '24px'],
 			'13': '13px',
-			'32': '32px'
+			'28': '28px',
+			'32': '32px',
 		},
 		fontFamily: {
 			outfit: ['Outfit', 'sans-serif'],

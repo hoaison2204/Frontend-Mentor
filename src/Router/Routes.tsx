@@ -1,9 +1,10 @@
-import { createBrowserRouter } from 'react-router-dom'
+import { createHashRouter } from 'react-router-dom'
 import MainLayout from '../MainLayout'
 import QRCode from '../components/QR-code/QRCode'
 import RecipePage from '../components/RecipePage/RecipePage'
+import BlogPreviewCard from '../components/Blog-preview-card/Blog-preview-card'
 
-const router = createBrowserRouter([
+const Routes = createHashRouter([
 	{
 		path: '/',
 		element: <MainLayout />,
@@ -16,8 +17,12 @@ const router = createBrowserRouter([
 				path: 'Recipe-page',
 				element: <RecipePage />,
 			},
+			{
+				path: 'blog-preview-card',
+				element: <BlogPreviewCard />
+			}
 		],
 	},
 ])
 
-export default router
+export default Routes
